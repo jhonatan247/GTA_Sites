@@ -100,11 +100,213 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
         width: 8rem;
     }
 }
-@media only screen and (max-height: 430px) {  
+@media only screen and (max-height: 800px) {  
     
+    .juegoPhaserH {	
+	     height: 800px;
+	     width: 800px;
+        } 
+}
+@media only screen and (max-height: 775px) {  
+    
+    .juegoPhaserH {	
+	     height: 775px;
+	     width: 775px;
+        } 
+}
+@media only screen and (max-height: 750px) {  
+    
+    .juegoPhaserH {	
+	     height: 750px;
+	     width: 750px;
+        } 
+}
+@media only screen and (max-height: 725px) {  
+    
+    .juegoPhaserH {	
+	     height: 725px;
+	     width: 725px;
+        } 
+}
+@media only screen and (max-height: 700px) {  
+    
+    .juegoPhaserH {	
+	     height: 700px;
+	     width: 700px;
+        } 
+}
+@media only screen and (max-height: 675px) {  
+    
+    .juegoPhaserH {	
+	     height: 675px;
+	     width: 675px;
+        } 
+}
+@media only screen and (max-height: 650px) {  
+    
+    .juegoPhaserH {	
+	     height: 650px;
+	     width: 650px;
+        } 
+}
+@media only screen and (max-height: 625px) {  
+    
+    .juegoPhaserH {	
+	     height: 625px;
+	     width: 625px;
+        } 
+}
+@media only screen and (max-height: 600px) {  
+    
+    .juegoPhaserH {	
+	     height: 600px;
+	     width: 600px;
+        } 
+}
+@media only screen and (max-height: 575px) {  
+    
+    .juegoPhaserH {	
+	     height: 575px;
+	     width: 575px;
+        } 
+}
+@media only screen and (max-height: 550px) {  
+    
+    .juegoPhaserH {	
+	     height: 550px;
+	     width: 550px;
+        } 
+}
+@media only screen and (max-height: 525px) {  
+    .juegoPhaserH {	
+	     height: 525px;
+	     width: 525px;
+        } 
     .registrar h1 {
         margin: 0;
     }
+    .registrar input {
+        padding: 0.4rem;
+        margin: 5px;
+        width: 16rem;
+        border-radius: 0.5em;
+    }
+    .registrar button {
+        width: 8rem;
+    }
+}
+@media only screen and (max-height: 500px) {  
+    
+    .juegoPhaserH {	
+	     height: 500px;
+	     width: 500px;
+        } 
+}
+@media only screen and (max-height: 475px) {  
+    
+    .juegoPhaserH {	
+	     height: 475px;
+	     width: 475px;
+        } 
+}
+@media only screen and (max-height: 450px) {  
+    
+    .juegoPhaserH {	
+	     height: 450px;
+	     width: 450px;
+        } 
+}
+@media only screen and (max-height: 425px) {  
+    
+    .juegoPhaserH {	
+	     height: 425px;
+	     width: 425px;
+        } 
+}
+@media only screen and (max-height: 400px) {  
+    .juegoPhaserH {	
+	     height: 400px;
+	     width: 400px;
+        } 
+    .registrar h1 {
+        display: none;
+    }
+}
+@media only screen and (max-height: 375px) {  
+    
+    .juegoPhaserH {	
+	     height: 375px;
+	     width: 375px;
+        } 
+}
+@media only screen and (max-height: 350px) {  
+    
+    .juegoPhaserH {	
+	     height: 350px;
+	     width: 350px;
+        } 
+    .registrar input {
+        padding: 0.3rem;
+        margin: 3px;
+    }
+    .registrar button {
+        margin-top: 0.2rem;
+	   padding: 0.2rem 0.1rem;
+    }
+}
+@media only screen and (max-height: 325px) {  
+    
+    .juegoPhaserH {	
+	     height: 325px;
+	     width: 325px;
+        } 
+}
+@media only screen and (max-height: 300px) {  
+    
+    .juegoPhaserH {	
+	     height: 300px;
+	     width: 300px;
+        } 
+}
+@media only screen and (max-height: 275px) {  
+    
+    .juegoPhaserH {	
+	     height: 275px;
+	     width: 275px;
+        } 
+    .registrar input {
+        padding: 0.1rem;
+        margin: 1px;
+    }
+}
+@media only screen and (max-height: 250px) {  
+    
+    .juegoPhaserH {	
+	     height: 250px;
+	     width: 250px;
+        } 
+}
+@media only screen and (max-height: 225px) {  
+    
+    .juegoPhaserH {	
+	     height: 225px;
+	     width: 225px;
+        } 
+}
+@media only screen and (max-height: 200px) {  
+    .juegoPhaserH {	
+	     height: 200px;
+	     width: 200px;
+        } 
+    .registrar input {
+        padding: 0rem;
+        margin: 0px;
+    }
+    .registrar button {
+        margin-top: 0rem;
+	   padding: 0rem 0rem;
+    }
+    
 }
 	
 	
