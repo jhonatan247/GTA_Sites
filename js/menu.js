@@ -1,6 +1,7 @@
 var menu = {
     
     preload: function(){
+        //Cargando los recursos del estado
         pantalla.load.image('ButtonMapa', 'images/ButtonMapa.png');
         pantalla.load.image('ButtonNuevo', 'images/ButtonNuevo.png');
         pantalla.load.image('ButtonAyuda', 'images/ButtonAyuda.png');
@@ -9,8 +10,11 @@ var menu = {
     },
     
     create: function(){
+        //Se añade la imagen de fondo
         fondopantalla = pantalla.add.tileSprite(0, 0, 820, 820, "fondo");
         
+        
+        //Se añaden los botones del menú
         var buttonMapa = this.add.button(pantalla.width/2, pantalla.height/2 -150, 'ButtonMapa', this.iniciar, this);
         buttonMapa.anchor.setTo(0.5);
         buttonMapa.scale.setTo(0.3, 0.3);
@@ -19,10 +23,12 @@ var menu = {
         buttonNuevo.anchor.setTo(0.5);
         buttonNuevo.scale.setTo(0.3, 0.3);
         
-        var buttonAyuda = this.add.button(pantalla.width/2, pantalla.height/2 +150, 'ButtonAyuda', this.iniciar, this);
+        var buttonAyuda = this.add.button(pantalla.width/2, pantalla.height/2 +150, 'ButtonAyuda', this.abrirDocs, this);
         buttonAyuda.anchor.setTo(0.5);
         buttonAyuda.scale.setTo(0.3, 0.3);
         
+        
+        //Se añade el botón de sonido y sus eventos para pausar o continuar la música del juego
         var buttonSound = this.add.button(60, 60, 'soundIcon', vacio, this);
         buttonSound.anchor.setTo(0.5);
         buttonSound.scale.setTo(0.2, 0.2);
@@ -39,5 +45,8 @@ var menu = {
     
     iniciar: function(){
         pantalla.state.start('mapa');
+    },
+    abrirDocs:function(){
+        window.open("docs/documentacion.pdf", '_blank');
     }
 };

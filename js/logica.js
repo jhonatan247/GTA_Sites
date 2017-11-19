@@ -1,29 +1,40 @@
+//Evita que el usuario salga de la página por accidente, mostrando un mensaje de confirmación.
 window.onbeforeunload = confirmExit;
   function confirmExit()
   {
     return "Usted está saliendo de la pagina";
   }
+//Lógica para aparecer y desaparecer el formulario hecha con jquery
 function oscurecerVentana(){
+    //oscurece el juego
     $("#oscurecer").fadeIn(300, aparecerFormulario);
 }
 function aparecerFormulario(){
+    //muestra el formulario
     $("#registrar").fadeIn(); 
-    
+    //Se añade el evento para enviar formulario al boton enviar
     $("#enviar").click(enviarSitio);
+    //se añade el evento para desaparecer formulario al boton cancelar
     $("#cancelar").click(desaparecerFormulario);
     
+    //Se añade un evento al input de tipo file para saber cuándo se seleccionó un archivo
     $('input[type=file]').change(function () {
         $('#imagen').val( $('#archivo').val());
     });
 }
+//hace visible al juego
 function desoscurecer(){
     $("#oscurecer").fadeOut()
 }
+//desaparece el formulario
 function desaparecerFormulario(){
     $("#registrar").fadeOut(300, desoscurecer)
 }
+//Registra el sitio en la base de datos
 function enviarSitio(e){
+    //neutraliza la acción por defecto del botón
     e.preventDefault();
+    //obtiene los datos del formulario
     var titulo = $("#titulo").val();
     var imagen = $("#imagen").val();
     var descripcion = $("#descripcion").val();
@@ -31,6 +42,7 @@ function enviarSitio(e){
     var x = $("#x").val();
     var y = $("#y").val();
     var message = "";
+    //valida que los datos ingresados sean correctos
     if(titulo.length<3){
         message = "El campo Título es requerido.";
     }if(titulo.length>maxLengthTitulo){
@@ -53,24 +65,32 @@ function enviarSitio(e){
     else if(autor.length<3){
         message = "El campo autor es requerido.";
     }
+    //en caso de que los datos sean correctos
     if(message==""){
+        //obtiene el archivo seleccionado
         var file = document.getElementById("archivo").files[0];
-            console.log(file);
         var fileName = file.name;
-
-        var storageRef = firebase.storage().ref();
-        var uploadTask = storageRef.child(fileName).put(file);
         
+        //Instancia una referencia a la base de datos
+        var storageRef = firebase.storage().ref();
+        //Sube la imagen a la base de datos
+        var uploadTask = storageRef.child(fileName).put(file);
+        //Evento que informa el estado de subida de la imagen
         uploadTask.on("state_changed", 
+            //función que informa algún cambio en el estado de la imagen
           function(snapshot) {
             var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
             console.log('Subiendo '+progress + '% completado');
           }, 
+            //función que informa algún error en la subida
             function(error) {
                 console.log("Ha ocurrido un error")
             }, 
+            //función que se ejecuta cuando se ha completado la subida de la imagen
             function() {
+                //se obtiene el link de la imagen subida
                 var downloadURL = uploadTask.snapshot.downloadURL;
+                //se añade el sitio a la base de datos
                 DBsites.push({
                         titulo: titulo,
                         imagen: downloadURL,
@@ -79,24 +99,25 @@ function enviarSitio(e){
                         x : parseFloat(x),
                         y : parseFloat(y)
                     });
-                    desaparecerFormulario();
+                //se limpia el formulario
+                $("#titulo").val("");
+                $("#imagen").val("");
+                $("#descripcion").val("");
+                $("#x").val("");
+                $("#y").val("");
+                //Se muestra un mensaje
+                alert("El sitio ha sido registrado correctamente.\n¡Ve al mapa para verlo!");
+                //se regresa al menú anterior
+                desaparecerFormulario();
             }
         );
 
     }else{
+        //Se muestra mensaje de validación
         alert(message);
     }
 }
-function ontenerNombre(str) {
-    var index=0;
-    for(var i =0; i<str.length;i++){
-        if(str.substring(i,i+1)=='/'||str.slice(i,i+1)=="\\"){
-            index = i+1;
-        }
-    }
-    return str.substring(index, str.length);
-    
- }
+//verifica que el archivo sea una imagen
 function check(img) {
         var ext = img;
         ext = ext.substring(ext.length-3,ext.length);

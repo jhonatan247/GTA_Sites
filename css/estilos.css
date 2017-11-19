@@ -1,32 +1,33 @@
+/*Estilos de la aplicación*/
 @charset "UTF-8";
 
 body {
 	margin: 0;
 	padding: 0;
 }
-        h2 {
-			margin-left: 10px;
-			font-family: Arial, Helvetica, sans-serif;
-			font-style: normal;
-			font-weight: normal;
-			text-align: left;
-	        text-shadow: 1px 1px #000000;
-		}
-       .texto {
-		 position: relative;
-		 padding-top: 15px;
-		 margin: auto;
-	     width: 300px;
-		 font-family: Arial, Helvetica, sans-serif;	
-		 text-align: justify;
-		 font-size: 20px;
-		 color: #0000BB;
-		 }
-		.juegoPhaserH {	
-		 box-shadow: 10px 15px 15px 0 rgba(0, 0, 0, 0.4);
-		 } 
+h2 {
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    text-shadow: 1px 1px #000000;
+}
+.texto {
+    position: relative;
+    padding-top: 15px;
+    margin: auto;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;	
+    text-align: justify;
+    font-size: 20px;
+    color: #0000BB;
+}
+.juegoPhaserH {	
+    box-shadow: 10px 15px 15px 0 rgba(0, 0, 0, 0.4);
+} 
 
-
+/*Estilos del formulario*/
 .oscurecer {
 	position: fixed;
 	top: 0;
@@ -72,7 +73,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
     color: white;
     
 }
-@media only screen and (min-width: 820px) {  /* Si la pantalla es mayor a 720px muestra el texto a la derecha */
+
+/*Adaptación responsive de la aplicación*/
+@media only screen and (min-width: 820px) {  
 	 .texto {
 		 position: absolute;
 		 margin-top: -550px;
@@ -84,6 +87,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 	     width: 820px;
 		 } 
 }
+/*Adaptación responsive del formulario*/
 @media only screen and (max-width: 370px) {  
     
     .registrar input {
