@@ -1,3 +1,4 @@
+//Variables globales de la aplicación
 var fondoPantalla;
 var fondoX = -614;
 var fondoY = -614;
@@ -36,6 +37,7 @@ var snapShots;
 
 var maxLengthTitulo =18;
 
+//función de pausar o reanudar la música
 function changeSound(btn){
     if(soundState){
         soundGTA.pause();
@@ -46,4 +48,5 @@ function changeSound(btn){
     }
     soundState = !soundState;
 }
+//función que no hace nada
 function vacio(){}

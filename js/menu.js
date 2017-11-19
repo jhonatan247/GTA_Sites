@@ -42,10 +42,11 @@ var menu = {
             }
         });
     },
-    
+    //inicia el estdao mapa
     iniciar: function(){
         pantalla.state.start('mapa');
     },
+    //abre la documentación
     abrirDocs:function(){
         window.open("docs/documentacion.pdf", '_blank');
     }
