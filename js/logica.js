@@ -64,7 +64,7 @@ function enviarSitio(e){
         uploadTask.on("state_changed", 
           function(snapshot) {
             var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-            console.log('Subiendo 'progress + '% completado');
+            console.log('Subiendo '+progress + '% completado');
           }, 
             function(error) {
                 console.log("Ha ocurrido un error")
