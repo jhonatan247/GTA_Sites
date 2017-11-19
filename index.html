@@ -1,0 +1,61 @@
+<!doctype html>
+<!-- Ejemplo de un mapa interactivo creado utilizando la librería externa Phaser
+    - realizado por el profesor Carlos Delgado para el curso Gráfica Interactiva de la Universidad Nacional de Colombia-->
+<html>
+<head>
+	<meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GTA SA Sites</title>
+    
+    
+    <script src="js/firebase.js"></script>
+    
+    
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCRB-0MXeftVR8818986CA7b3ZJiWsMp60",
+        authDomain: "mapagta-d77c5.firebaseapp.com",
+        databaseURL: "https://mapagta-d77c5.firebaseio.com",
+        projectId: "mapagta-d77c5",
+        storageBucket: "mapagta-d77c5.appspot.com",
+        messagingSenderId: "15493967638"
+      };
+      firebase.initializeApp(config);
+    </script>
+    
+	<script src="js/logica.js"></script>
+    
+	<script src="js/phaser.js"></script>
+	<script src="js/globales.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/mapa.js"></script>
+	<script src="js/selectedView.js"></script>
+	<script src="js/main.js"></script>
+    
+	<link href="css/estilos.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="body">
+	<div class="oscurecer" id="oscurecer"></div>
+	<div class="registrar" id="registrar">
+		<h1>Añadir sitio</h1>
+		<form id="formulario">
+			<input type="text" placeholder="Título" id="titulo"><br>
+			<input type="text" placeholder="Ruta de la imagen" id="imagen" disabled>
+			<input type="file" id="archivo" accept="image/x-png, image/jpeg"><br>
+			<input type="text" placeholder="Descripción" id="descripcion">
+			<input type="text" placeholder="Autor (Tu nombre)"  id="autor" ><br>
+			<input type="number" placeholder="Posición X"  id="x" >
+            <input type="number" placeholder="Posición Y"  id="y"><br>
+            <button  type="button" id="cancelar">Cancelar </button>
+            <button  type="submit" id="enviar">Enviar </button>
+		</form>
+	</div>
+	<div id="container" class= "juegoPhaserH" ></div>
+    
+	<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+</body>
+</html>
