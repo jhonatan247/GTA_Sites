@@ -100,88 +100,90 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
         width: 8rem;
     }
 }
-@media only screen and (max-height: 800px) {  
+@media only screen and (max-height: 800px) and (min-width: 800px) {  
     
     .juegoPhaserH {	
 	     height: 800px;
 	     width: 800px;
         } 
 }
-@media only screen and (max-height: 775px) {  
+@media only screen and (max-height: 775px) and (min-width: 775px) {  
     
     .juegoPhaserH {	
 	     height: 775px;
 	     width: 775px;
         } 
 }
-@media only screen and (max-height: 750px) {  
+@media only screen and (max-height: 750px) and (min-width: 750px) {  
     
     .juegoPhaserH {	
 	     height: 750px;
 	     width: 750px;
         } 
 }
-@media only screen and (max-height: 725px) {  
+@media only screen and (max-height: 725px) and (min-width: 725px) {  
     
     .juegoPhaserH {	
 	     height: 725px;
 	     width: 725px;
         } 
 }
-@media only screen and (max-height: 700px) {  
+@media only screen and (max-height: 700px) and (min-width: 700px) {  
     
     .juegoPhaserH {	
 	     height: 700px;
 	     width: 700px;
         } 
 }
-@media only screen and (max-height: 675px) {  
+@media only screen and (max-height: 675px) and (min-width: 675px) {  
     
     .juegoPhaserH {	
 	     height: 675px;
 	     width: 675px;
         } 
 }
-@media only screen and (max-height: 650px) {  
+@media only screen and (max-height: 650px) and (min-width: 650px) {  
     
     .juegoPhaserH {	
 	     height: 650px;
 	     width: 650px;
         } 
 }
-@media only screen and (max-height: 625px) {  
+@media only screen and (max-height: 625px) and (min-width: 625px) {  
     
     .juegoPhaserH {	
 	     height: 625px;
 	     width: 625px;
         } 
 }
-@media only screen and (max-height: 600px) {  
+@media only screen and (max-height: 600px) and (min-width: 600px) {  
     
     .juegoPhaserH {	
 	     height: 600px;
 	     width: 600px;
         } 
 }
-@media only screen and (max-height: 575px) {  
+@media only screen and (max-height: 575px) and (min-width: 575px) {  
     
     .juegoPhaserH {	
 	     height: 575px;
 	     width: 575px;
         } 
 }
-@media only screen and (max-height: 550px) {  
+@media only screen and (max-height: 550px) and (min-width: 550px) {  
     
     .juegoPhaserH {	
 	     height: 550px;
 	     width: 550px;
         } 
 }
-@media only screen and (max-height: 525px) {  
+@media only screen and (max-height: 525px) and (min-width: 525px) {  
     .juegoPhaserH {	
 	     height: 525px;
 	     width: 525px;
         } 
+}
+@media only screen and (max-height: 525px) {  
     .registrar h1 {
         margin: 0;
     }
@@ -195,56 +197,61 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
         width: 8rem;
     }
 }
-@media only screen and (max-height: 500px) {  
+@media only screen and (max-height: 500px) and (min-width: 500px) {  
     
     .juegoPhaserH {	
 	     height: 500px;
 	     width: 500px;
         } 
 }
-@media only screen and (max-height: 475px) {  
+@media only screen and (max-height: 475px) and (min-width: 475px) {  
     
     .juegoPhaserH {	
 	     height: 475px;
 	     width: 475px;
         } 
 }
-@media only screen and (max-height: 450px) {  
+@media only screen and (max-height: 450px) and (min-width: 450px) {  
     
     .juegoPhaserH {	
 	     height: 450px;
 	     width: 450px;
         } 
 }
-@media only screen and (max-height: 425px) {  
+@media only screen and (max-height: 425px) and (min-width: 425px) {  
     
     .juegoPhaserH {	
 	     height: 425px;
 	     width: 425px;
         } 
 }
-@media only screen and (max-height: 400px) {  
+@media only screen and (max-height: 400px) and (min-width: 425px) {  
     .juegoPhaserH {	
 	     height: 400px;
 	     width: 400px;
         } 
+}
+@media only screen and (max-height: 400px) {  
     .registrar h1 {
         display: none;
     }
 }
-@media only screen and (max-height: 375px) {  
+@media only screen and (max-height: 375px) and (min-width: 425px) {  
     
     .juegoPhaserH {	
 	     height: 375px;
 	     width: 375px;
         } 
 }
-@media only screen and (max-height: 350px) {  
+@media only screen and (max-height: 350px) and (min-width: 425px) {  
     
     .juegoPhaserH {	
 	     height: 350px;
 	     width: 350px;
         } 
+}
+@media only screen and (max-height: 350px) {  
+    
     .registrar input {
         padding: 0.3rem;
         margin: 3px;
@@ -254,50 +261,56 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 	   padding: 0.2rem 0.1rem;
     }
 }
-@media only screen and (max-height: 325px) {  
+@media only screen and (max-height: 325px) and (min-width: 425px) {  
     
     .juegoPhaserH {	
 	     height: 325px;
 	     width: 325px;
         } 
 }
-@media only screen and (max-height: 300px) {  
+@media only screen and (max-height: 300px) and (min-width: 425px) {  
     
     .juegoPhaserH {	
 	     height: 300px;
 	     width: 300px;
         } 
 }
-@media only screen and (max-height: 275px) {  
+@media only screen and (max-height: 275px) and (min-width: 425px) {  
     
     .juegoPhaserH {	
 	     height: 275px;
 	     width: 275px;
         } 
+}
+@media only screen and (max-height: 275px) {  
+    
     .registrar input {
         padding: 0.1rem;
         margin: 1px;
     }
 }
-@media only screen and (max-height: 250px) {  
+@media only screen and (max-height: 250px) and (min-width: 425px) {  
     
     .juegoPhaserH {	
 	     height: 250px;
 	     width: 250px;
         } 
 }
-@media only screen and (max-height: 225px) {  
+@media only screen and (max-height: 225px) and (min-width: 425px) {  
     
     .juegoPhaserH {	
 	     height: 225px;
 	     width: 225px;
         } 
 }
-@media only screen and (max-height: 200px) {  
+@media only screen and (max-height: 200px) and (min-width: 425px) {  
     .juegoPhaserH {	
 	     height: 200px;
 	     width: 200px;
         } 
+    
+}
+@media only screen and (max-height: 200px) {  
     .registrar input {
         padding: 0rem;
         margin: 0px;
