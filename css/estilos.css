@@ -183,7 +183,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 	     width: 525px;
         } 
 }
-@media only screen and (max-height: 525px) {  
+@media only screen and (max-height: 525px) and (max-width:740px) {  
+    .registrar h1 {
+        margin: 0;
+    }
+    .registrar input {
+        padding: 0.4rem;
+        margin: 5px;
+        width: 16rem;
+        border-radius: 0.5em;
+    }
+    .registrar button {
+        width: 8rem;
+    }
+}
+@media only screen and (max-height: 350px) and (min-width:735px) {  
     .registrar h1 {
         margin: 0;
     }
@@ -231,7 +245,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 	     width: 400px;
         } 
 }
-@media only screen and (max-height: 400px) {  
+@media only screen and (max-height: 400px) and (max-width: 580px) {  
+    .registrar h1 {
+        display: none;
+    }
+}
+@media only screen and (max-height: 265px) and (min-width: 580px) {  
     .registrar h1 {
         display: none;
     }
@@ -250,7 +269,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 	     width: 350px;
         } 
 }
-@media only screen and (max-height: 350px) {  
+@media only screen and (max-height: 350px) and (max-width: 580px) {  
+    
+    .registrar input {
+        padding: 0.3rem;
+        margin: 3px;
+    }
+    .registrar button {
+        margin-top: 0.2rem;
+	   padding: 0.2rem 0.1rem;
+    }
+}
+@media only screen and (max-height: 225px) and (min-width: 580px) {  
     
     .registrar input {
         padding: 0.3rem;
@@ -282,7 +312,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 	     width: 275px;
         } 
 }
-@media only screen and (max-height: 275px) {  
+@media only screen and (max-height: 275px) and (max-width: 580px) {  
+    
+    .registrar input {
+        padding: 0.1rem;
+        margin: 1px;
+    }
+}
+@media only screen and (max-height: 180px) and (min-width: 580px) {  
     
     .registrar input {
         padding: 0.1rem;
@@ -310,7 +347,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
         } 
     
 }
-@media only screen and (max-height: 200px) {  
+@media only screen and (max-height: 200px) and (max-width: 580px) {  
+    .registrar input {
+        padding: 0rem;
+        margin: 0px;
+    }
+    .registrar button {
+        margin-top: 0rem;
+	   padding: 0rem 0rem;
+    }
+    
+}
+@media only screen and (max-height: 130px) and (min-width: 580px) {  
     .registrar input {
         padding: 0rem;
         margin: 0px;
